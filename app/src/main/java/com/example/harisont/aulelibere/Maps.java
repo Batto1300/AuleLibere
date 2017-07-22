@@ -99,27 +99,26 @@ public class Maps extends AppCompatActivity {
             // getItem is called to instantiate the fragment for the given page.
             switch (position) {
                 case 0:
-
-                    Floor floormin1=new Floor(/*vettore di aule*/,R.layout.floormin1);
-                    return floormin1;
+                    Room floormin1_rooms[]; floormin1_rooms=new Room[]{A0};
+                    return new Floor(floormin1_rooms, R.layout.floormin1);
                 case 1:
-                    Floor1 floor1=new Floor1();
-                    return floor1;
+                    Room floor1_rooms[]; floor1_rooms=new Room[]{A2, B1};
+                    return new Floor(floor1_rooms, R.layout.floor1);
                 case 2:
-                    Floor2 floor2=new Floor2();
-                    return floor2;
+                    Room floor2_rooms[]; floor2_rooms=new Room[]{A2bis, B2, C2, D2};
+                    return new Floor(floor2_rooms, R.layout.floor2);
                 case 3:
-                    Floor3 floor3=new Floor3();
-                    return floor3;
+                    Room floor3_rooms[]; floor3_rooms=new Room[]{A3, B3, C3};
+                    return new Floor(floor3_rooms, R.layout.floor3);
                 case 4:
-                    Floor4 floor4=new Floor4();
-                    return floor4;
+                    Room floor4_rooms[]; floor4_rooms=new Room[]{AS, BB};
+                    return new Floor(floor4_rooms, R.layout.floor4);
                 case 5:
-                    Floor5 floor5=new Floor5();
-                    return floor5;
+                    Room floor5_rooms[]; floor5_rooms=new Room[]{};
+                    return new Floor(floor5_rooms, R.layout.floor5);
                 case 6:
-                    Floor6 floor6=new Floor6();
-                    return floor6;
+                    Room floor6_rooms[]; floor6_rooms=new Room[]{};
+                    return new Floor(floor6_rooms, R.layout.floor6);
                 default: return null;
             }
         }

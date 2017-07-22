@@ -16,9 +16,9 @@ import org.xmlpull.v1.XmlPullParser;
 public class Floor extends Fragment {
 
     Room[] rooms;
-    XmlPullParser parser;
+    int parser;
 
-    public Floor(Room[] rooms, XmlPullParser parser) { //R.layout.floorx
+    public Floor(Room[] rooms, int parser) {
         this.rooms = rooms;
         this.parser = parser;
     }
